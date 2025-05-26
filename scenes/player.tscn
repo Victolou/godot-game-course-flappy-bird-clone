@@ -34,7 +34,6 @@ animations = [{
 radius = 36.0139
 
 [node name="player" type="CharacterBody2D"]
-position = Vector2(236, 102)
 script = ExtResource("1_dqkch")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
