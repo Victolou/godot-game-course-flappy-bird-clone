@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1748274258
+::res://::1748334152
 icon.svg::CompressedTexture2D/CompressedTexture2D::3480875002513063011::1748247592::1748247600::1::::<><><>0<>0<>71654e7d8b10419695562ec9061a91c4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1748251960
 ::res://assets/audio/::1748252044
@@ -40,8 +40,16 @@ tapTick.png::CompressedTexture2D/CompressedTexture2D::6864859009277166699::17310
 textGameOver.png::CompressedTexture2D/CompressedTexture2D::618944589921854803::1731037944::1748252043::1::::<><><>0<>0<>3050c4f9ec31892de6718b6967e4c8be<>res://.godot/imported/textGameOver.png-2c6453ce3e263e2fbe217397c512ad12.ctex::
 textGetReady.png::CompressedTexture2D/CompressedTexture2D::7655046250166005230::1731037944::1748252043::1::::<><><>0<>0<>eb22051fa4b0b294631ec966be3ccf07<>res://.godot/imported/textGetReady.png-e4f941ed4a54838e6ea856c14ac3d119.ctex::
 UIbg.png::CompressedTexture2D/CompressedTexture2D::3702752671040061402::1731037944::1748252043::1::::<><><>0<>0<>9f65706b7284a8530a2bd4338cc227c4<>res://.godot/imported/UIbg.png-b7648240c7f3e329a8efd6f674ad8cd8.ctex::
-::res://scenes/::1748257371
-player.gd::GDScript::3867632057814758081::1748257172::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::2883490185330429848::1748257371::0::1::::<><><>0<>0<><>::uid://bvdrlnf4eg2hx::::res://scenes/player.gd<>uid://cgtdfpa61o4i7::::res://assets/sprites/planes/planeYellow1.png<>uid://cbnja2ianreex::::res://assets/sprites/planes/planeYellow2.png<>uid://c7ml0cof4y8ad::::res://assets/sprites/planes/planeYellow3.png
+::res://extra/::1748334159
+spawner.tscn::PackedScene::1287570535549216831::1748334159::0::1::::<><><>0<>0<><>::
+::res://scenes/::1748331882
+player.gd::GDScript/GDScript::3867632057814758081::1748282211::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::2883490185330429848::1748331882::0::1::::<><><>0<>0<><>::uid://bvdrlnf4eg2hx::::res://scenes/player.gd<>uid://cgtdfpa61o4i7::::res://assets/sprites/planes/planeYellow1.png<>uid://cbnja2ianreex::::res://assets/sprites/planes/planeYellow2.png<>uid://c7ml0cof4y8ad::::res://assets/sprites/planes/planeYellow3.png
+::res://scenes/main/::1748331882
+main.gd::GDScript::7667349342209925357::1748331876::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::2227709154658074220::1748331882::0::1::::<><><>0<>0<><>::uid://duiy5x8u0hr7r::::res://assets/sprites/background.png<>uid://dhieegyf66cvt::::res://scenes/main/main.gd<>uid://bhc1wrl758vxo::::res://scenes/player.tscn<>uid://dlsthoqtnguwc::::res://scenes/obstacle/obstacle.tscn
+::res://scenes/obstacle/::1748334051
+obstacle.tscn::PackedScene::7969665015015310238::1748334051::0::1::::<><><>0<>0<><>::uid://cqejf74ebsjqx::::res://assets/sprites/rockSnowDown.png<>uid://bffdftg5rweh5::::res://scenes/obstacle/obstacle.gd<>uid://dtfi2ha7ihubr::::res://assets/sprites/rockSnow.png
+obstacle.gd::GDScript::2747878879200514972::1748331624::0::1::::<>Node2D<><>0<>0<><>::
 ::res://scenes/player/::1748250813
 player.tscn::PackedScene/PackedScene::8971917489781511091::1748250782::0::1::::<><><>0<>0<><>::
