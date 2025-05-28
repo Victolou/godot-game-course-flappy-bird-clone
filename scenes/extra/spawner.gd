@@ -2,6 +2,8 @@ extends Node
 class_name Spawner
 
 signal on_obstacle_crash
+signal on_player_score_spaw
+
 const OBSTACLE_scene = preload("res://scenes/obstacle/obstacle.tscn")
 
 @onready var timer: Timer = $Timer
@@ -9,6 +11,7 @@ const OBSTACLE_scene = preload("res://scenes/obstacle/obstacle.tscn")
 func spawn_obstacle() -> void:
 	var obs_instance: Obstacle = OBSTACLE_scene.instantiate()
 	obs_instance.on_player_crashed.connect(_on_player_crashed)
+	obs_instance.on_player_score.connect(_on_player_score)
 	
 	#obtener el tamaño de pantalla
 	var viewport: Viewport = get_viewport()
@@ -31,6 +34,9 @@ func stop_obstacle() -> void:
 func _on_player_crashed() -> void:
 	on_obstacle_crash.emit()
 	stop_obstacle()
+	
+func _on_player_score() -> void:
+	on_player_score_spaw.emit()
 	
 func _on_timer_timeout() -> void:
 	spawn_obstacle()
