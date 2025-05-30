@@ -8,6 +8,9 @@ signal on_game_started
 @export var max_speed: float = 400.0
 @export var rotation_speed: float = 2.0
 
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var jump_audio: AudioStreamPlayer = $jump_audio
+
 var started: bool = false
 var process_input: bool = true
 
@@ -32,6 +35,7 @@ func jump() -> void:
 
 	velocity.y =- jump_force
 	rotation = deg_to_rad(-30)
+	jump_audio.play()
 	
 func rotate_player() -> void: 	
 	if velocity.y > 0 && rad_to_deg(rotation) < 90:

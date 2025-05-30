@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://ds0vku1d2nhud"]
+
+[ext_resource type="FontFile" uid="uid://due6jbyye53ld" path="res://assets/fonts/font_score.ttf" id="1_i5mpx"]
+
+[resource]
+font = ExtResource("1_i5mpx")
+font_size = 32
+font_color = Color(0.945098, 0.8, 0.211765, 1)
+outline_size = 16
+outline_color = Color(0.3, 0.1922, 0.069, 1)

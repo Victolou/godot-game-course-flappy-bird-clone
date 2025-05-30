@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dqwmqnjgo31ny"]
+[gd_scene load_steps=6 format=3 uid="uid://dqwmqnjgo31ny"]
 
 [ext_resource type="Script" uid="uid://clwcufeowemlk" path="res://scenes/ground/ground.gd" id="1_rrkwn"]
 [ext_resource type="Texture2D" uid="uid://cvjp578yskg1i" path="res://assets/sprites/groundSnow.png" id="2_xmv3o"]
+[ext_resource type="AudioStream" uid="uid://dnm5b6pojwpjl" path="res://assets/audio/sfx_die.wav" id="3_xmv3o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrkwn"]
 size = Vector2(808, 71.5)
@@ -13,6 +14,7 @@ size = Vector2(808, 71.5)
 script = ExtResource("1_rrkwn")
 
 [node name="ground1" type="Area2D" parent="."]
+physics_interpolation_mode = 2
 position = Vector2(404, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ground1"]
@@ -24,6 +26,7 @@ position = Vector2(0, -0.25)
 shape = SubResource("RectangleShape2D_rrkwn")
 
 [node name="ground2" type="Area2D" parent="."]
+physics_interpolation_mode = 2
 position = Vector2(1212, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground2"]
@@ -32,6 +35,10 @@ debug_color = Color(0.889827, 0.249964, 0.535409, 0.42)
 
 [node name="Sprite2D" type="Sprite2D" parent="ground2"]
 texture = ExtResource("2_xmv3o")
+
+[node name="die_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xmv3o")
+bus = &"SFX"
 
 [connection signal="body_entered" from="ground1" to="." method="_on_ground_body_entered"]
 [connection signal="body_entered" from="ground2" to="." method="_on_ground_body_entered"]

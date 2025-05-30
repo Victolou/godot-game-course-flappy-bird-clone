@@ -6,6 +6,7 @@ signal on_player_crash
 @onready var ground_1: Area2D = $ground1
 @onready var ground_2: Area2D = $ground2
 @onready var sprite_2d: Sprite2D = %Sprite2D
+@onready var die_sound: AudioStreamPlayer = $die_sound
 
 @export var speed := -150.0
 
@@ -23,7 +24,6 @@ func _process(delta: float) -> void:
 		
 	if ground_2.global_position.x < -width / 2:
 		ground_2.global_position.x = ground_1.global_position.x + width
-		
 
 func stop_ground(value: float) -> void:
 	speed = value
@@ -34,3 +34,5 @@ func _on_ground_body_entered(body: Node2D) -> void:
 	var player := body as Player
 	player.stop_movement()
 	player.stop_gravity()
+	die_sound.play()
+	

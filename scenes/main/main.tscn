@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://duiy5x8u0hr7r" path="res://assets/sprites/background.png" id="1_hyk8p"]
 [ext_resource type="Script" uid="uid://dhieegyf66cvt" path="res://scenes/main/main.gd" id="1_k2fmo"]
-[ext_resource type="PackedScene" uid="uid://bhc1wrl758vxo" path="res://scenes/player.tscn" id="2_iuonh"]
+[ext_resource type="PackedScene" uid="uid://dd5f6tjbkprq6" path="res://scenes/player.tscn" id="2_iuonh"]
 [ext_resource type="PackedScene" uid="uid://slydl8sgpu2b" path="res://scenes/extra/spawner.tscn" id="4_l3cfh"]
-[ext_resource type="PackedScene" uid="uid://dvo4x7wb5162y" path="res://ui/game_ui.tscn" id="4_ow5a4"]
+[ext_resource type="PackedScene" uid="uid://dvo4x7wb5162y" path="res://scenes/ui/game_ui.tscn" id="4_ow5a4"]
 [ext_resource type="PackedScene" uid="uid://dqwmqnjgo31ny" path="res://scenes/ground/ground.tscn" id="5_6q06x"]
 
 [node name="Main" type="Node2D"]
